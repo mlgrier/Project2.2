@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
         //This below give the correct code
-        GKRandomSource.sharedRandom().nextInt(upperBound: 3)
+        correctAnswer = GKRandomSource.sharedRandom().nextInt(upperBound: 3)
         
         title = countries[correctAnswer].uppercased()
     }
